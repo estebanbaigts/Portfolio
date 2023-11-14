@@ -1,0 +1,39 @@
+.group-wrapper {
+  height: 26px;
+  width: 237px;
+}
+
+.group-wrapper .group-2 {
+  height: 26px;
+  position: relative;
+  width: 273px;
+}
+
+.group-wrapper .info-designmodo-com {
+  color: var(--solid-heading);
+  font-family: "DM Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 239px;
+}
+
+.group-wrapper .fa-envelope {
+  color: var(--solid-heading);
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 38px;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  white-space: nowrap;
+  width: 16px;
+}

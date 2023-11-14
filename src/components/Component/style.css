@@ -1,0 +1,19 @@
+.component {
+  height: 350px;
+  width: 1204px;
+}
+
+.component .text {
+  height: 297px;
+  position: relative;
+  top: 45px;
+  width: 638px;
+}
+
+.component .you-have-the-design {
+  height: 274px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 593px;
+}
