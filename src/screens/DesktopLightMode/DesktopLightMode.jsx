@@ -5,28 +5,46 @@ import { GroupWrapper } from "../../components/GroupWrapper";
 import "./style.css";
 
 export const DesktopLightMode = () => {
+  const scrollToSection = (sectionId) => {
+    const sectionElement = document.querySelector(`.${sectionId}`);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="desktop-light-mode">
       <div className="div-2">
         <div className="group-3">
           <div className="navbar">
-            <div className="text-wrapper">Tech Stack</div>
-            <div className="text-wrapper-2">Contact</div>
-            <div className="text-wrapper-3">Projects</div>
-            <div className="text-wrapper-4">Home</div>
-            <div className="text-wrapper-5">About</div>
+            <button onClick={() => scrollToSection("text-wrapper-6")} className="text-wrapper-2">
+              Tech Stack
+            </button>
+            <button onClick={() => scrollToSection("text-wrapper-20")} className="text-wrapper">
+              Projects
+            </button>
           </div>
           <div className="group-4">
-            <img
-              className="entypo-social"
-              alt="Entypo social"
-              src="https://c.animaapp.com/LcNIGwu7/img/entypo-social-linkedin-with-circle.svg"
-            />
-            <img className="vector" alt="Vector" src="https://c.animaapp.com/LcNIGwu7/img/vector-4.svg" />
+            <a href="https://www.linkedin.com/in/esteban-baigts-70b423232/" target="_blank" rel="noopener noreferrer">
+              <img
+                className="linkedin"
+                alt="Entypo social"
+                src="https://c.animaapp.com/LcNIGwu7/img/entypo-social-linkedin-with-circle.svg"
+              />
+            </a>
+            <a href="https://github.com/estebanbaigts" target="_blank" rel="noopener noreferrer">
+              <img
+                className="github"
+                alt="Vector"
+                src="https://c.animaapp.com/LcNIGwu7/img/vector-4.svg"
+              />
+            </a>
           </div>
+
           <img className="datacyb" alt="Datacyb" src="https://c.animaapp.com/LcNIGwu7/img/datacyb@2x.png" />
         </div>
         <div className="text-wrapper-6">My Tech Stack</div>
+        <div className="text-wrapper-20">Projects</div>
         <img
           className="akar-icons-github"
           alt="Akar icons github"
@@ -45,8 +63,11 @@ export const DesktopLightMode = () => {
         />
         <div className="overlap-group">
           <div className="rectangle" />
-          <div className="text-wrapper-7">Live Preview</div>
-          <div className="text-wrapper-8">View Code</div>
+          <div className="text-wrapper-8">
+            <a href="https://github.com/estebanbaigts/N4S" target="_blank" rel="noopener noreferrer">
+              View Code
+            </a>
+          </div>
           <div className="text-wrapper-9">Projet 🔨 - N4S</div>
           <p className="p">
             A project based on AI, the goal being to connect an AI to a small car with lasers that allows it to orient
@@ -57,11 +78,7 @@ export const DesktopLightMode = () => {
             <span className="text-wrapper-10">&nbsp;</span>
             <span className="text-wrapper-11">C</span>
           </p>
-          <img
-            className="akar-icons-link"
-            alt="Akar icons link"
-            src="https://c.animaapp.com/LcNIGwu7/img/akar-icons-link-chain-3.svg"
-          />
+
           <img
             className="img"
             alt="Akar icons github"
@@ -74,8 +91,11 @@ export const DesktopLightMode = () => {
           />
         </div>
         <div className="overlap">
-          <div className="text-wrapper-12">Live Preview</div>
-          <div className="text-wrapper-13">View Code</div>
+          <div className="text-wrapper-8">
+            <a href="https://github.com/estebanbaigts/Popeye" target="_blank" rel="noopener noreferrer">
+              View Code
+            </a>
+          </div>
           <div className="text-wrapper-14">Projet 🔨 - POPEYE</div>
           <p className="text-wrapper-15">
             The goal was to containerize and define the deployment of a simple web survey application.
@@ -85,11 +105,6 @@ export const DesktopLightMode = () => {
             <span className="text-wrapper-10">&nbsp;</span>
             <span className="text-wrapper-11">HTML , JavaScript, CSS,, Docker</span>
           </p>
-          <img
-            className="akar-icons-link-2"
-            alt="Akar icons link"
-            src="https://c.animaapp.com/LcNIGwu7/img/akar-icons-link-chain-3.svg"
-          />
           <img
             className="akar-icons-github-2"
             alt="Akar icons github"
@@ -102,25 +117,22 @@ export const DesktopLightMode = () => {
           />
         </div>
         <div className="overlap-2">
-          <div className="text-wrapper-12">Live Preview</div>
-          <div className="text-wrapper-13">View Code</div>
-          <div className="text-wrapper-16">Projet 🔨 - EPYTODO</div>
+          <div className="text-wrapper-8">
+            <a href="https://github.com/estebanbaigts/RPG" target="_blank" rel="noopener noreferrer">
+              View Code
+            </a>
+          </div>
+          <div className="text-wrapper-16">Projet 🔨 - RPG</div>
           <div className="overlap-3">
             <p className="text-wrapper-17">
-              Projet Epitech qui consiste à créer une API REST qui gère les opérations CRUD, en l&#39;occurrence pour
-              une application de liste de tâches.
+              Projet Epitech qui consiste à créer un jeux RPG en C avec la librairie CSFML
             </p>
             <p className="div-3">
               <span className="span">Tech stack :</span>
               <span className="text-wrapper-10">&nbsp;</span>
-              <span className="text-wrapper-11">HTML , JavaScript, Python, TSQL, CSS</span>
+              <span className="text-wrapper-11">C</span>
             </p>
           </div>
-          <img
-            className="akar-icons-link-2"
-            alt="Akar icons link"
-            src="https://c.animaapp.com/LcNIGwu7/img/akar-icons-link-chain-3.svg"
-          />
           <img
             className="akar-icons-github-2"
             alt="Akar icons github"
@@ -133,8 +145,11 @@ export const DesktopLightMode = () => {
           />
         </div>
         <div className="overlap-4">
-          <div className="text-wrapper-12">Live Preview</div>
-          <div className="text-wrapper-13">View Code</div>
+          <div className="text-wrapper-8">
+            <a href="https://github.com/estebanbaigts/GreenMeet" target="_blank" rel="noopener noreferrer">
+              View Code
+            </a>
+          </div>
           <div className="text-wrapper-18">Projet 🔨 - GreenMett</div>
           <div className="overlap-3">
             <p className="text-wrapper-17">
@@ -147,11 +162,6 @@ export const DesktopLightMode = () => {
               <span className="text-wrapper-11">HTML, CSS , JavaScript, React Native</span>
             </p>
           </div>
-          <img
-            className="akar-icons-link-2"
-            alt="Akar icons link"
-            src="https://c.animaapp.com/LcNIGwu7/img/akar-icons-link-chain-3.svg"
-          />
           <img
             className="akar-icons-github-2"
             alt="Akar icons github"
@@ -172,19 +182,16 @@ export const DesktopLightMode = () => {
           />
         </div>
         <div className="text-wrapper-19">Technologies that i use</div>
-        <div className="that-i-like-to-do">That i&nbsp;&nbsp;like to do</div>
+        <div className="that-i-like-to-do">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What i did</div>
         <div className="text-wrapper-20">Projects</div>
         <div className="overlap-6">
           <div className="menu">
             <div className="about">Projects</div>
             <div className="about-2">Contact</div>
-            <div className="pricing">About</div>
-            <div className="portfolio">Home</div>
+            <div className="about-3">Tech Stack</div>
           </div>
-          <div className="text-wrapper-21">Tech Stack</div>
         </div>
         <img className="divider" alt="Divider" src="https://c.animaapp.com/LcNIGwu7/img/divider.svg" />
-        <img className="group-5" alt="Group" src="https://c.animaapp.com/LcNIGwu7/img/group-1@2x.png" />
         <Group className="group-6" />
         <GroupWrapper className="group-7" />
         <img className="group-8" alt="Group" src="https://c.animaapp.com/LcNIGwu7/img/group@2x.png" />

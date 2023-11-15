@@ -36,22 +36,6 @@
   font-style: var(--buttons-big-font-style);
   font-weight: var(--buttons-big-font-weight);
   height: 26px;
-  left: 245px;
-  letter-spacing: var(--buttons-big-letter-spacing);
-  line-height: var(--buttons-big-line-height);
-  position: absolute;
-  text-align: center;
-  top: 0;
-  white-space: nowrap;
-}
-
-.desktop-light-mode .text-wrapper-2 {
-  color: #666666;
-  font-family: var(--buttons-big-font-family);
-  font-size: var(--buttons-big-font-size);
-  font-style: var(--buttons-big-font-style);
-  font-weight: var(--buttons-big-font-weight);
-  height: 26px;
   left: 531px;
   letter-spacing: var(--buttons-big-letter-spacing);
   line-height: var(--buttons-big-line-height);
@@ -61,7 +45,7 @@
   white-space: nowrap;
 }
 
-.desktop-light-mode .text-wrapper-3 {
+.desktop-light-mode .text-wrapper-2 {
   color: #666666;
   font-family: var(--buttons-big-font-family);
   font-size: var(--buttons-big-font-size);
@@ -117,7 +101,7 @@
   width: 83px;
 }
 
-.desktop-light-mode .entypo-social {
+.desktop-light-mode .github {
   height: 30px;
   left: 53px;
   position: absolute;
@@ -125,7 +109,7 @@
   width: 30px;
 }
 
-.desktop-light-mode .vector {
+.desktop-light-mode .linkedin {
   height: 29px;
   left: 0;
   position: absolute;
@@ -633,6 +617,19 @@
   font-size: 18px;
   font-weight: 400;
   left: 486px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.desktop-light-mode .about-3 {
+  color: #4d426e;
+  font-family: "DM Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 40%;
   letter-spacing: 0;
   line-height: 26px;
   position: absolute;
